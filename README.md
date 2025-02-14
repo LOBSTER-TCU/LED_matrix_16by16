@@ -4,11 +4,14 @@
 ## 介紹 Introduction
 
 這個專案目的是從零開始自製大型 LED 矩陣，包含了將 LED 燈泡串接為 LED 矩陣、使用 MAX7219 驅動晶片並自製擴展板連接至 LED 矩陣，以及將多個 MAX7219 模組串接至一個 Arduino Uno 板，並且透過程式驅動，顯示出跑馬燈的效果。
-這個 Github 的內容包含了精簡版和完整版；
-完整版包含了四份分開的教材 pdf，適合完全沒有程式語言或電路學基礎的朋友，從零開始手把手帶你製作出成果；
-在 readme 中呈現的是精簡版，適合看到電路就能在萬能板上重製的朋友，直接下載電路圖及 Arduino 程式就可使用。  
 
-This project aims to build a large LED matrix from scratch, including connecting LED bulbs into a matrix, using the MAX7219 driver chip, creating an expansion board, and connecting multiple MAX7219 modules to an Arduino Uno board to display scrolling effects through programming. The GitHub repository offers both a simplified version and a full version: the full version is for beginners with no prior programming or circuit knowledge, providing a step-by-step guide to achieve the results, while the quick version is for those familiar with circuits and Arduino, offering the circuit diagram and code for immediate use.
+這個 repository 的內容包含了精簡版和完整版；
+在 readme 中呈現的是精簡版，適合看到電路就能在萬能板上重製的朋友，直接下載電路圖及 Arduino 程式就可使用。  
+完整版包含了四份分開的教材 pdf，適合完全沒有程式語言或電路學基礎的朋友，從零開始手把手帶你製作出成果；
+
+This project aims to build a large LED matrix from scratch, including connecting LED bulbs into a matrix, using the MAX7219 driver chip, creating an expansion board, and connecting multiple MAX7219 modules to an Arduino Uno board to display scrolling effects through programming. 
+
+This GitHub repository offers both a simplified version and a full version: the full version is for beginners with no prior programming or circuit knowledge, providing a step-by-step guide to achieve the results, while the quick version is for those familiar with circuits and Arduino, offering the circuit diagram and code for immediate use.
 
 This is the final effect. The character scrolls from right to left.
 ![final effect](./img_readme/final_show.jpg)
@@ -37,7 +40,7 @@ The Arduino Uno controller is used to control two display modules to display Chi
 | 4.  | 斜口鉗、剝線鉗、尖嘴鉗 |                     |
 | 5.  | 木板                   | 1 片  (?? 大小?)              |
 | 6.  | 單芯線                 | (建議至少 2 種顏色) |
-| 7.  | LED燈                  | 256個               |
+| 7.  | LED燈泡 (我們用的是 10mm)         | 256個               |
 | 8.  | 杜邦線                 |                     |
 | 9.  | 三用電表               | 1                   |
 | 10. | 萬用板                 | 4                   |
