@@ -45,18 +45,18 @@ The Arduino Uno controller is used to control two display modules to display Chi
 
 ## 製作流程 
 ### 1. LED 矩陣製作 LED Matrix Production
-詳細的製作過程，可以看: [用 LED 燈泡自製 LED 顯示矩陣的手把手教學by楊禮安 Li-An Yang_Craft your 16x16 LED with MAX7219 driver](Li-An Yang_Craft your 16x16 LED with MAX7219 driver.pdf)
+詳細的製作過程，可以看: [用 LED 燈泡自製 LED 顯示矩陣的手把手教學by楊禮安 Li-An Yang_Craft your 16x16 LED with MAX7219 driver](Li-An%20Yang_Craft%20your%2016x16%20LED%20with%20MAX7219%20driver.pdf)
 
 (這裡要請禮安幫忙, 用一個螢幕的篇輻，講解 16x16 的 LED 矩陣如何製作, 並且附上 8x8 LED電路圖)
 
 ### 2. MAX7219 擴展板製作 MAX7219 Breakout Board Production
 詳細的製作過程，可以看: [MAX7219
-晶片與 LED 矩陣分線板電路實現by陳冠羽 Guan-Yu Chen_MAX7219_breakout_board](Guan-Yu Chen_MAX7219_breakout_board.pdf)
+晶片與 LED 矩陣分線板電路實現by陳冠羽 Guan-Yu Chen_MAX7219_breakout_board](Guan-Yu%20Chen_MAX7219_breakout_board.pdf)
 
 (這裡要請冠羽幫忙, 用一個螢幕的篇輻，講解 MAX7219 擴展板如何製作, 並且附上 MAX7219 PIN 腳圖)
 
 ### 3. LED 模組串接 LED Module Connection
-詳細的製作過程，可以看: [用 LED 燈泡自製 LED 顯示矩陣的手把手教學by楊禮安 Li-An Yang_Craft your 16x16 LED with MAX7219 driver.pdf](Li-An Yang_Craft your 16x16 LED with MAX7219 driver.pdf)
+詳細的製作過程，可以看: [用 LED 燈泡自製 LED 顯示矩陣的手把手教學by楊禮安 Li-An Yang_Craft your 16x16 LED with MAX7219 driver.pdf](Li-An%20Yang_Craft%20your%2016x16%20LED%20with%20MAX7219%20driver.pdf)
 (這裡要請禮安幫忙, 用一個螢幕的篇輻，講解如何組裝 LED 矩陣)
 
 ### 4. 跑馬燈程式碼 Code
@@ -64,9 +64,9 @@ The Arduino Uno controller is used to control two display modules to display Chi
 
 詳細流程可參考：[米羅科技有限公司提供的教材](https://shop.mirotek.com.tw/tutorial/arduino-max7219)
 
-針對 MAX7219 串連成的顯示模組如何用，可看: [使用MAX7219控制模組進行程式開發 by 王儷蓁 Li-Jen Wang_LED control by MAX7219](Li-Jen Wang_LED control by MAX7219.pdf)
+針對 MAX7219 串連成的顯示模組如何用，可看: [使用MAX7219控制模組進行程式開發 by 王儷蓁 Li-Jen Wang_LED control by MAX7219](Li-Jen%20Wang_LED%20control%20by%20MAX7219.pdf)
 
-詳細的 LED 跑馬燈原理，可以看: [從認識Arduino板基礎到用Max7219做出16＊16跑馬燈程式碼 by 彭歆惠 (Peng_Shin Huei 16x16 LED scrolling effect from scratch.pdf)](Peng_Shin Huei 16x16 LED scrolling effect from scratch.pdf)
+詳細的 LED 跑馬燈原理，可以看: [從認識Arduino板基礎到用Max7219做出16＊16跑馬燈程式碼 by 彭歆惠 (Peng_Shin Huei 16x16 LED scrolling effect from scratch.pdf)](Peng_Shin%20Huei%2016x16%20LED%20scrolling%20effect%20from scratch.pdf)
 
 (這裡要請歆惠幫忙, 用一個螢幕的篇輻，講解最終的那個程式碼大概的流程)
 
