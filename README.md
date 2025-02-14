@@ -69,7 +69,7 @@ The Arduino Uno controller is used to control two display modules to display Chi
 
 針對 MAX7219 串連成的顯示模組如何用，可看: [使用MAX7219控制模組進行程式開發 by 王儷蓁 Li-Jen Wang_LED control by MAX7219](Li-Jen%20Wang_LED%20control%20by%20MAX7219.pdf)
 
-詳細的 LED 跑馬燈原理，可以看: [從認識Arduino板基礎到用Max7219做出16＊16跑馬燈程式碼 by 彭歆惠 (Peng_Shin Huei 16x16 LED scrolling effect from scratch.pdf)](Peng_Shin%20Huei%2016x16%20LED%20scrolling%20effect%20from scratch.pdf)
+詳細的 LED 跑馬燈原理，可以看: [從認識Arduino板基礎到用Max7219做出16＊16跑馬燈程式碼 by 彭歆惠 (Peng_Shin Huei 16x16 LED scrolling effect from scratch.pdf)](Peng_Shin%20Huei%2016x16%20LED%20scrolling%20effect%20from%20scratch.pdf)
 
 (這裡要請歆惠幫忙, 用一個螢幕的篇輻，講解最終的那個程式碼大概的流程)
 
