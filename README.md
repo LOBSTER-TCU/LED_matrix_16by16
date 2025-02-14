@@ -11,11 +11,11 @@
 This project aims to build a large LED matrix from scratch, including connecting LED bulbs into a matrix, using the MAX7219 driver chip, creating an expansion board, and connecting multiple MAX7219 modules to an Arduino Uno board to display scrolling effects through programming. The GitHub repository offers both a simplified version and a full version: the full version is for beginners with no prior programming or circuit knowledge, providing a step-by-step guide to achieve the results, while the quick version is for those familiar with circuits and Arduino, offering the circuit diagram and code for immediate use.
 
 This is the final effect. The character scrolls from right to left.
-![final effect](.\img_readme\final_show.jpg)
+![final effect](./img_readme/final_show.jpg)
 
 ## 系統概述 System Overview
 
-![system module](.\img_readme\system_modules.jpg)
+![system module](./img_readme/system_modules.jpg)
 這個 16x16 LED 矩陣系統由 4 個 8x8 LED 模組組成，
 每個 LED 模組由 1 個 MAX7219 驅動晶片控制，
 再將每 2 個 LED 模組串接為一個 8x16 的顯示模組，(共 2 個 8x16 的顯示模組)，作為跑馬燈顯示的基本單位。
@@ -45,7 +45,7 @@ The Arduino Uno controller is used to control two display modules to display Chi
 
 ## 製作流程 
 ### 1. LED 矩陣製作 LED Matrix Production
-詳細的製作過程，可以看: [用 LED 燈泡自製 LED 顯示矩陣的手把手教學by楊禮安 (Li-An Yang_Craft your 16x16 LED with MAX7219 driver.pdf)](Li-An Yang_Craft your 16x16 LED with MAX7219 driver.pdf)
+詳細的製作過程，可以看: [用 LED 燈泡自製 LED 顯示矩陣的手把手教學by楊禮安 (Li-An Yang_Craft your 16x16 LED with MAX7219 driver.pdf)](./Li-An Yang_Craft your 16x16 LED with MAX7219 driver.pdf)
 
 (這裡要請禮安幫忙, 用一個螢幕的篇輻，講解 16x16 的 LED 矩陣如何製作, 並且附上 8x8 LED電路圖)
 
