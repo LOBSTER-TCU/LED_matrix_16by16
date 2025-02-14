@@ -77,9 +77,13 @@ The Arduino Uno controller is used to control two display modules to display Chi
 
 ## 作者 Credits
 楊禮安 慈濟大學醫學工程系
+
 陳冠羽 慈濟大學醫學工程系
+
 彭歆惠 慈濟大學醫學工程系
+
 王儷蓁 慈濟大學醫學工程系
+
 楊惠雯 慈濟大學醫學工程系
 
 ## 相關參考連結
