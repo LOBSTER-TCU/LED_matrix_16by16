@@ -45,13 +45,13 @@ The Arduino Uno controller is used to control two display modules to display Chi
 
 ## 製作流程 
 ### 1. LED 矩陣製作 LED Matrix Production
-詳細的製作過程，可以看: [用 LED 燈泡自製 LED 顯示矩陣的手把手教學by楊禮安 (Li-An Yang_Craft your 16x16 LED with MAX7219 driver.pdf)](./Li-An Yang_Craft your 16x16 LED with MAX7219 driver.pdf)
+詳細的製作過程，可以看: [用 LED 燈泡自製 LED 顯示矩陣的手把手教學by楊禮安 Li-An Yang_Craft your 16x16 LED with MAX7219 driver](Li-An Yang_Craft your 16x16 LED with MAX7219 driver.pdf)
 
 (這裡要請禮安幫忙, 用一個螢幕的篇輻，講解 16x16 的 LED 矩陣如何製作, 並且附上 8x8 LED電路圖)
 
 ### 2. MAX7219 擴展板製作 MAX7219 Breakout Board Production
 詳細的製作過程，可以看: [MAX7219
-晶片與 LED 矩陣分線板電路實現by陳冠羽 Guan-Yu Chen_MAX7219_breakout_board](Guan-Yu Chen_MAX7219_breakout_board.pdf)
+晶片與 LED 矩陣分線板電路實現by陳冠羽 Guan-Yu Chen_MAX7219_breakout_board](./Guan-Yu Chen_MAX7219_breakout_board.pdf)
 
 (這裡要請冠羽幫忙, 用一個螢幕的篇輻，講解 MAX7219 擴展板如何製作, 並且附上 MAX7219 PIN 腳圖)
 
