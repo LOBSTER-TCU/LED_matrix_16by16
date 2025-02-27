@@ -71,7 +71,17 @@ The Arduino Uno controller is used to control two display modules to display Chi
 
 詳細的 LED 跑馬燈原理，可以看: [從認識Arduino板基礎到用Max7219做出16＊16跑馬燈程式碼 by 彭歆惠 (Peng_Shin Huei 16x16 LED scrolling effect from scratch.pdf)](Peng_Shin%20Huei%2016x16%20LED%20scrolling%20effect%20from%20scratch.pdf)
 
-(這裡要請歆惠幫忙, 用一個螢幕的篇輻，講解最終的那個程式碼大概的流程)
+首先設定好 LED 顯示器的控制方式，這裡有兩組 LED 控制器 (lc 和 lc2)，各自控制 2 個 8x8 的 LED 點陣。可以藉由修改 LedControl 來支援更多 MAX7219 控制器。這些控制器透過 DIN (資料)、CS (片選)、CLK (時鐘) 來跟 MAX7219 溝通，讓 LED 亮起來。
+接著準備要顯示的圖案，這裡定義了 兩組圖案 (daCharacter1, daCharacter2 和 newCharacter1, newCharacter2)，每個圖案是 16 列，每列 8 個點。可以修改 daCharacter1 等陣列來顯示不同的內容，圖案的格式是 二進制數 (B00000110 這種)，表示哪些 LED 要亮。
+開始顯示後的滾動效果以scrollMessage() 這個函數，外層 for 迴圈（offset = 15 表示字形剛開始顯示在最右邊，offset = -15 則表示字形完全離開左側）讓圖案從最右邊出現，慢慢往左邊滑動消失。讓第一組圖案滾動，然後再讓第二組圖案滾動。
+
+![system module](https://github.com/user-attachments/assets/568b297b-5936-4c42-8a4f-a9d58ea2959b)
+![system module](https://github.com/user-attachments/assets/58ec0274-411f-4c88-b590-febd8bce6a7f)
+![system module](https://github.com/user-attachments/assets/7e2b2d5f-8078-4360-ab43-4bca24ae289a)
+![system module](https://github.com/user-attachments/assets/673e7490-44a4-43e8-848a-d14b2a3fc65d)
+
+每次滾動時，程式會一列一列地往左移動，讓圖案產生流動感。而內層 for 迴圈 (row < 8)。每次移動後，程式會更新 LED 的顯示內容，並延遲 200 毫秒 來控制滾動速度。完成滾動後會停頓 1 秒，然後換下一組圖案，讓它們輪流播放。
+
 
 最後的程式碼，請見  [code/final_scrolling_Da.ino]
 (這裡要請儷蓁幫忙把最後一版跑馬燈的大字程式碼 .ino 檔上傳)
