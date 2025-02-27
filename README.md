@@ -75,12 +75,16 @@ The Arduino Uno controller is used to control two display modules to display Chi
 接著準備要顯示的圖案，這裡定義了 兩組圖案 (daCharacter1, daCharacter2 和 newCharacter1, newCharacter2)，每個圖案是 16 列，每列 8 個點。可以修改 daCharacter1 等陣列來顯示不同的內容，圖案的格式是 二進制數 (B00000110 這種)，表示哪些 LED 要亮。
 開始顯示後的滾動效果以scrollMessage() 這個函數，外層 for 迴圈（offset = 15 表示字形剛開始顯示在最右邊，offset = -15 則表示字形完全離開左側）讓圖案從最右邊出現，慢慢往左邊滑動消失。讓第一組圖案滾動，然後再讓第二組圖案滾動。
 
+First of all, set the control mode of the LED display, there are two sets of LED controllers (lc and lc2), each of which controls two 8x8 LED dot matrix. LedControl can be modified to support more MAX7219 controllers. These controllers communicate with the MAX7219 via DIN (data), CS (chip select), and CLK (clock) to make the LEDs light up.Then prepare the pattern to be displayed, here we define two sets of patterns (daCharacter1, daCharacter2 and newCharacter1, newCharacter2), each pattern is 16 columns, each column has 8 points. Arrays such as daCharacter1 can be modified to display different content, and the pattern is formatted as binary numbers (B00000110 this one) to indicate which LEDs are to be lit.The scrolling effect after the start of the display is the scrollMessage() function, and the outer for loop (offset = 15 means that the glyph is displayed at the far right at first, offset = -15 means that the glyph is completely away from the left) makes the pattern appear from the far right, and slowly slides to the left to disappear. Let the first set of patterns roll, and then let the second set of patterns roll.
+
 ![system module](https://github.com/user-attachments/assets/568b297b-5936-4c42-8a4f-a9d58ea2959b)
 ![system module](https://github.com/user-attachments/assets/58ec0274-411f-4c88-b590-febd8bce6a7f)
 ![system module](https://github.com/user-attachments/assets/7e2b2d5f-8078-4360-ab43-4bca24ae289a)
 ![system module](https://github.com/user-attachments/assets/673e7490-44a4-43e8-848a-d14b2a3fc65d)
 
 每次滾動時，程式會一列一列地往左移動，讓圖案產生流動感。而內層 for 迴圈 (row < 8)。每次移動後，程式會更新 LED 的顯示內容，並延遲 200 毫秒 來控制滾動速度。完成滾動後會停頓 1 秒，然後換下一組圖案，讓它們輪流播放。
+
+Each time you scroll, the program moves to the left, column by column, giving the pattern a sense of fluidity. And the inner layer for loop (row < 8). After each movement, the program updates the display of the LEDs with a 200 millisecond delay to control the scrolling speed. There is a 1-second pause when you finish scrolling, then you swap out a set of patterns and let them take turns.
 
 
 最後的程式碼，請見  [code/final_scrolling_Da.ino]
