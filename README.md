@@ -87,8 +87,7 @@ First of all, set the control mode of the LED display, there are two sets of LED
 Each time you scroll, the program moves to the left, column by column, giving the pattern a sense of fluidity. And the inner layer for loop (row < 8). After each movement, the program updates the display of the LEDs with a 200 millisecond delay to control the scrolling speed. There is a 1-second pause when you finish scrolling, then you swap out a set of patterns and let them take turns.
 
 
-最後的程式碼，請見  [code/final_scrolling_Da.ino]
-(這裡要請儷蓁幫忙把最後一版跑馬燈的大字程式碼 .ino 檔上傳)
+最後的程式碼，請見  [code/完整程式碼.ino]
 
 
 
